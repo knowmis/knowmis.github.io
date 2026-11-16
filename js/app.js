@@ -35,7 +35,7 @@
     'groups.dss.name': 'Decision Support Systems', 'groups.dss.dir': 'Direzione scientifica: prof. Matteo Gaeta',
     'groups.dss.p': 'Supporto intelligente alle decisioni nei Cyber-Physical-Social Systems: architetture decisionali ibride e adattive, decisioni di gruppo con intelligenza computazionale (ad es. logica fuzzy), analisi della percezione collettiva, business intelligence e analytics.',
     'people.h2': 'Persone', 'people.dirnote': 'Direttore del laboratorio · direzione scientifica di KnowMIS-DSS.',
-    'people.coord': 'Coordinatore · KnowMIS-SA', 'people.collab': 'Collaboratore',
+    'people.conote': 'Coordinatore · direzione scientifica di KnowMIS-SA.', 'people.collab': 'Collaboratore',
     'partners.h2': 'Una rete che unisce laboratori, città e aziende.',
     'partners.intl': 'Internazionali', 'partners.nat': 'Nazionali', 'partners.ind': 'Industria',
     'partners.spin': 'Dalla ricerca del laboratorio è nato lo spin-off', 'partners.spin2': ', che applica IA e Computational Situation Awareness al city branding e allo sviluppo territoriale.',
