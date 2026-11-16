@@ -18,12 +18,14 @@
     'hero.lead': 'KnowMIS, laboratorio di Knowledge Management and Information Systems dell’Università degli Studi di Salerno, studia come persone, organizzazioni e sistemi intelligenti trasformano la consapevolezza della situazione in decisioni efficaci.',
     'hero.cta1': 'Collabora con il laboratorio', 'hero.cta2': 'Scopri la ricerca',
     'sa.h2': 'La Situation Awareness è il punto da cui nascono le buone decisioni.',
-    'sa.p': 'È l’identità scientifica di KnowMIS: rendere interpretabili gli ambienti complessi, perché persone e sistemi decidano meglio. La scena qui sotto è il Golfo di Salerno visto a tre risoluzioni: un atto ciascuno per percepire, comprendere e proiettare.',
-    'act1.h': 'Percepire', 'act1.p': 'Reti di sensori ed elaborazione dei dati raccolgono ciò che un ambiente emette. Il primo atto trasforma flussi grezzi in segnali degni di attenzione.',
+    'sa.p': 'Un tema centrale di KnowMIS: rendere interpretabili gli ambienti complessi, perché persone e sistemi decidano meglio. Una scena, il Golfo di Salerno, a tre risoluzioni: percepire, comprendere, proiettare.',
+    'hero.dir': 'Direttore', 'join.contact': 'Per mettersi in contatto, usa le pagine della rubrica UniSA dei responsabili del laboratorio:',
+    'top.arch': 'Architetture decisionali adattive', 'top.group': 'Decisioni di gruppo', 'top.fuzzy': 'Logica fuzzy', 'top.coll': 'Percezione collettiva', 'top.bi': 'Business intelligence e analytics', 'groups.dss.topics': 'Temi',
+    'act1.h': 'Percepire', 'act1.p': 'Reti di sensori ed elaborazione dei dati raccolgono ciò che un ambiente emette e trasformano flussi grezzi in segnali degni di attenzione.',
     'act1.canvas': 'Una scena costiera resa con tessere di mosaico molto grandi',
-    'act2.h': 'Comprendere', 'act2.p': 'Modelli cognitivi e computazionali delle situazioni, con ragionamento e visualizzazione che danno significato ai segnali: che cosa accade, a chi, e perché conta.',
+    'act2.h': 'Comprendere', 'act2.p': 'Modelli cognitivi e computazionali delle situazioni, con ragionamento e visualizzazione che danno significato ai segnali.',
     'act2.canvas': 'La stessa scena costiera con tessere medie: si distinguono sole, mare, colline e case',
-    'act3.h': 'Proiettare', 'act3.p': 'Il Granular Computing for Cognitive Situation Management supporta previsione e decisione: che cosa accadrà dopo, e che cosa fare.',
+    'act3.h': 'Proiettare', 'act3.p': 'Il Granular Computing for Cognitive Situation Management supporta previsione e decisione.',
     'act3.canvas': 'La scena costiera con tessere fini, una barca sull’acqua e case sulla collina',
     'groups.h2': 'Due gruppi di ricerca, una sola domanda.',
     'groups.sa.name': 'Situation Awareness', 'groups.sa.dir': 'Direzione scientifica: prof. Giuseppe D’Aniello',
@@ -38,8 +40,8 @@
     'partners.intl': 'Internazionali', 'partners.nat': 'Nazionali', 'partners.ind': 'Industria',
     'partners.spin': 'Dalla ricerca del laboratorio è nato lo spin-off', 'partners.spin2': ', che applica IA e Computational Situation Awareness al city branding e allo sviluppo territoriale.',
     'join.h2': 'Tre modi per entrare.',
-    'join.s': 'Studenti', 'join.sp': 'Tesi su Situation Awareness e Decision Support Systems per Ingegneria Informatica, Ingegneria dell’Informazione e Medicina Digitale (primo e secondo livello).', 'join.sc': 'Contatta il prof. D’Aniello',
-    'join.p': 'Aziende', 'join.pp': 'Progetti di ricerca, sviluppo e trasferimento tecnologico, come nelle collaborazioni con Poste Italiane, Engineering e Ciaopeople.', 'join.pc': 'Contatta il prof. Gaeta',
+    'join.s': 'Studenti', 'join.sp': 'Tesi su Situation Awareness e Decision Support Systems per Ingegneria Informatica, Ingegneria dell’Informazione e Medicina Digitale (primo e secondo livello).',
+    'join.p': 'Aziende', 'join.pp': 'Progetti di ricerca, sviluppo e trasferimento tecnologico, come nelle collaborazioni con Poste Italiane, Engineering e Ciaopeople.',
     'join.r': 'Ricercatori', 'join.rp': 'Ricerca congiunta con una rete stabile di gruppi nazionali e internazionali su Situation Awareness e supporto alle decisioni.', 'join.rc': 'Scheda del laboratorio sul sito DIEM',
     'foot.lab': 'Laboratorio di Knowledge Management and Information Systems',
     'foot.dept': 'Dipartimento di Ingegneria dell’Informazione ed Elettrica e Matematica Applicata (DIEM)',
@@ -241,10 +243,10 @@
     document.querySelectorAll('.act-canvas').forEach(function (c, idx) {
       var W = c.parentElement.clientWidth > 900 ? c.getBoundingClientRect().width || 560 : c.parentElement.clientWidth;
       W = Math.max(240, Math.floor(c.clientWidth || W));
-      var H = Math.round(W * 0.74), cell = 5;
-      var final = [14, 5, 2][idx];
+      var H = Math.round(W * 0.74), cell = 4;
+      var final = [10, 5, 2][idx];
       var cols = Math.floor(W / cell), rows = Math.floor(H / cell);
-      cols -= cols % final; rows -= rows % final; // whole tiles at the resting resolution
+      cols -= cols % 10; rows -= rows % 10; // whole tiles at every resting resolution, equal heights
       sizeCanvas(c, cols * cell, rows * cell, dpr);
       c.style.width = cols * cell + 'px';
       // each act ends at its own resolution; earlier stops are coarser steps toward it
