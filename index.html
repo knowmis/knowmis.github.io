@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KnowMIS · Knowledge Management and Information Systems · University of Salerno</title>
+<meta name="description" content="KnowMIS is the Knowledge Management and Information Systems laboratory of the University of Salerno (DIEM). Situation Awareness and Decision Support Systems research.">
+<meta name="theme-color" content="#f6efdf">
+<script>try{var t=localStorage.getItem("knowmis-theme");var q=/[?&]theme=(dark|light)/.exec(location.search);if(q)t=q[1];if(t==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+<link rel="icon" href="assets/logos/knowmis_logo_upscaled_nobg.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="#top" aria-label="KnowMIS">
+    <img class="on-light" src="assets/logos/knowmis_logo_upscaled_nobg.png" alt="KnowMIS" width="132" height="44">
+    <img class="on-dark" src="assets/logos/knowmis_bianco.png" alt="KnowMIS" width="132" height="44">
+  </a>
+  <nav class="nav" aria-label="Main">
+    <a href="#sa" data-i18n="nav.sa">Situation Awareness</a>
+    <a href="#groups" data-i18n="nav.groups">Research</a>
+    <a href="#people" data-i18n="nav.people">People</a>
+    <a href="#partners" data-i18n="nav.partners">Partners</a>
+    <a href="#join" data-i18n="nav.join">Join</a>
+  </nav>
+  <div class="controls">
+    <button type="button" class="theme" aria-pressed="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></svg>
+      <span data-i18n="theme.dark">Dark</span>
+    </button>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="it" aria-pressed="false">IT</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <figure class="mosaic-hero">
+    <canvas id="hero-canvas" role="img" aria-label="The KnowMIS logo assembled from mosaic tiles that sharpen as you move the granularity control" data-i18n-aria="hero.canvas"></canvas>
+    <noscript><img src="assets/logos/knowmis_logo_upscaled_nobg.png" alt="KnowMIS" class="nojs-logo"></noscript>
+  </figure>
+  <div class="grain" role="group" aria-label="Granularity" data-i18n-aria="hero.grain">
+    <div class="grain-stops">
+      <button type="button" data-stop="0" aria-pressed="false"><i></i><span data-i18n="hero.s0">Data</span></button>
+      <button type="button" data-stop="1" aria-pressed="false"><i></i><span data-i18n="hero.s1">Understanding</span></button>
+      <button type="button" data-stop="2" aria-pressed="false"><i></i><span data-i18n="hero.s2">Awareness</span></button>
+      <button type="button" data-stop="3" aria-pressed="true"><i></i><span data-i18n="hero.s3">Decision</span></button>
+    </div>
+    <p class="grain-caption" id="grain-caption" data-i18n="hero.c3">Resolution enough to act. This is the work of the lab.</p>
+  </div>
+  <div class="hero-copy">
+    <h1 data-i18n="hero.h1">From data to understanding. From awareness to decision.</h1>
+    <div class="hero-side">
+      <p data-i18n="hero.lead">KnowMIS, the Knowledge Management and Information Systems laboratory of the University of Salerno, studies how people, organisations and intelligent systems turn situational awareness into effective decisions.</p>
+      <p class="cta-row">
+        <a class="btn btn-primary" href="#join" data-i18n="hero.cta1">Work with the lab</a>
+        <a class="btn btn-quiet" href="#sa" data-i18n="hero.cta2">See the research</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="sa-intro" id="sa">
+  <h2 data-i18n="sa.h2">Situation Awareness is where good decisions begin.</h2>
+  <p data-i18n="sa.p">It is the scientific identity of KnowMIS: making complex environments interpretable, so that people and systems decide better. The scene below is the Gulf of Salerno, seen at three resolutions: one act each for perceiving, comprehending and projecting.</p>
+</section>
+
+<section class="act act-1" aria-labelledby="act1">
+  <div class="act-text">
+    <h3 id="act1" data-i18n="act1.h">Perceive</h3>
+    <p data-i18n="act1.p">Sensor networks and data processing gather what an environment emits. The first act turns raw streams into signals worth attending to.</p>
+  </div>
+  <canvas class="act-canvas" data-act="0" role="img" aria-label="A coastal scene rendered in very large mosaic tiles" data-i18n-aria="act1.canvas"></canvas>
+</section>
+
+<section class="act act-2" aria-labelledby="act2">
+  <canvas class="act-canvas" data-act="1" role="img" aria-label="The same coastal scene in medium mosaic tiles: sun, sea, hills and houses can be told apart" data-i18n-aria="act2.canvas"></canvas>
+  <div class="act-text">
+    <h3 id="act2" data-i18n="act2.h">Comprehend</h3>
+    <p data-i18n="act2.p">Cognitive and computational models of situations, with reasoning and visualisation that give signals meaning: what is happening, to whom, and why it matters.</p>
+  </div>
+</section>
+
+<section class="act act-3" aria-labelledby="act3">
+  <div class="act-text">
+    <h3 id="act3" data-i18n="act3.h">Project</h3>
+    <p data-i18n="act3.p">Granular Computing for Cognitive Situation Management supports prediction and decision making: what happens next, and what to do about it.</p>
+  </div>
+  <canvas class="act-canvas" data-act="2" role="img" aria-label="The coastal scene in fine mosaic tiles with a boat on the water and houses on the hill" data-i18n-aria="act3.canvas"></canvas>
+</section>
+
+<section class="groups" id="groups">
+  <h2 data-i18n="groups.h2">Two research groups, one question.</h2>
+  <div class="groups-grid">
+    <article class="group group-sa">
+      <h3>KnowMIS-SA <span data-i18n="groups.sa.name">Situation Awareness</span></h3>
+      <p class="lead-line" data-i18n="groups.sa.dir">Scientific direction: Prof. Giuseppe D’Aniello</p>
+      <p data-i18n="groups.sa.p">Cognitive and computational modelling of situations; sensor networks and data processing; situation reasoning and understanding; visualisation and analysis of situations. Built on Granular Computing, AI, Computational Intelligence, Cognitive Science and Human Factors.</p>
+      <ul class="domains" aria-label="Application domains" data-i18n-aria="groups.sa.domains">
+        <li data-i18n="dom.city">Smart City</li>
+        <li data-i18n="dom.log">Logistics</li>
+        <li data-i18n="dom.edu">E-Learning</li>
+        <li data-i18n="dom.sec">Safety &amp; Security</li>
+        <li data-i18n="dom.ent">Enterprise</li>
+      </ul>
+    </article>
+    <article class="group group-dss">
+      <h3>KnowMIS-DSS <span data-i18n="groups.dss.name">Decision Support Systems</span></h3>
+      <p class="lead-line" data-i18n="groups.dss.dir">Scientific direction: Prof. Matteo Gaeta</p>
+      <p data-i18n="groups.dss.p">Intelligent decision support in Cyber-Physical-Social Systems: hybrid adaptive decision architectures, group decision making with computational intelligence such as fuzzy logic, collective-perception analysis, and business intelligence and analytics.</p>
+    </article>
+  </div>
+</section>
+
+<section class="people" id="people">
+  <h2 data-i18n="people.h2">People</h2>
+  <div class="people-grid">
+    <div class="director">
+      <p class="name-xl"><a href="https://rubrica.unisa.it/persone?matricola=001319" rel="noopener">Matteo Gaeta</a></p>
+      <p data-i18n="people.dirnote">Director of the laboratory · scientific direction of KnowMIS-DSS.</p>
+    </div>
+    <ul class="team">
+      <li><a href="https://rubrica.unisa.it/persone?matricola=027233" rel="noopener">Giuseppe D’Aniello</a><span data-i18n="people.coord">Coordinator · KnowMIS-SA</span></li>
+      <li><a href="https://rubrica.unisa.it/persone?matricola=047779" rel="noopener">Luca Aliberti</a><span data-i18n="people.collab">Collaborator</span></li>
+      <li><a href="https://rubrica.unisa.it/persone?matricola=065739" rel="noopener">Mario Della Corte</a><span data-i18n="people.collab">Collaborator</span></li>
+      <li><b>Alessandro Polverino</b><span data-i18n="people.collab">Collaborator</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="partners" id="partners">
+  <h2 data-i18n="partners.h2">A network that spans labs, cities and companies.</h2>
+  <div class="partners-grid">
+    <div>
+      <h3 data-i18n="partners.intl">International</h3>
+      <ul>
+        <li>University of Duisburg-Essen <em>DE</em></li>
+        <li>Drexel University <em>US</em></li>
+        <li>University of Alberta <em>CA</em></li>
+        <li>University of Kaohsiung <em>TW</em></li>
+        <li>Mindanao State University <em>PH</em></li>
+        <li>Madanapalle Institute of Technology &amp; Science <em>IN</em></li>
+        <li>IBM Almaden Services Research <em>US</em></li>
+        <li>University of Quebec <em>CA</em></li>
+        <li>University of Applied Sciences and Arts of Southern Switzerland <em>CH</em></li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="partners.nat">National</h3>
+      <ul>
+        <li>Università di Roma Tre</li>
+        <li>Università della Calabria</li>
+        <li>SISINF Lab, Politecnico di Bari</li>
+        <li>SIMAS research centre</li>
+      </ul>
+    </div>
+    <div>
+      <h3 data-i18n="partners.ind">Industry</h3>
+      <ul>
+        <li>Poste Italiane</li>
+        <li>Engineering</li>
+        <li>Ciaopeople Media Group</li>
+        <li>Evolution Group</li>
+        <li>The Aerospace Corporation <em>US</em></li>
+      </ul>
+      <p class="spin"><span data-i18n="partners.spin">From the lab’s research came the spin-off</span> <a href="http://www.urbanmis.com/" rel="noopener">UrbanMIS</a><span data-i18n="partners.spin2">, applying AI and Computational Situation Awareness to city branding and territorial development.</span></p>
+    </div>
+  </div>
+</section>
+
+<div class="seam" aria-hidden="true"></div>
+<section class="join" id="join">
+  <h2 data-i18n="join.h2">Three ways in.</h2>
+  <div class="join-grid">
+    <div>
+      <h3 data-i18n="join.s">Students</h3>
+      <p data-i18n="join.sp">Thesis work on Situation Awareness and Decision Support Systems for Ingegneria Informatica, Ingegneria dell’Informazione and Medicina Digitale (first and second level).</p>
+      <a class="btn btn-ink" href="https://rubrica.unisa.it/persone?matricola=027233" rel="noopener" data-i18n="join.sc">Contact Prof. D’Aniello</a>
+    </div>
+    <div>
+      <h3 data-i18n="join.p">Companies</h3>
+      <p data-i18n="join.pp">Research, development and technology-transfer projects, as in our collaborations with Poste Italiane, Engineering and Ciaopeople.</p>
+      <a class="btn btn-ink" href="https://rubrica.unisa.it/persone?matricola=001319" rel="noopener" data-i18n="join.pc">Contact Prof. Gaeta</a>
+    </div>
+    <div>
+      <h3 data-i18n="join.r">Researchers</h3>
+      <p data-i18n="join.rp">Joint research with a stable network of national and international groups on Situation Awareness and decision support.</p>
+      <a class="btn btn-ink" href="https://www.diem.unisa.it/dipartimento/strutture?id=4" rel="noopener" data-i18n="join.rc">Lab page at DIEM</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="seam" aria-hidden="true"></div>
+<footer class="foot">
+  <div>
+    <img class="on-light" src="assets/logos/knowmis_logo_upscaled_nobg.png" alt="KnowMIS" width="168" height="56">
+    <img class="on-dark" src="assets/logos/knowmis_bianco.png" alt="KnowMIS" width="168" height="56">
+  </div>
+  <address>
+    <span data-i18n="foot.lab">Knowledge Management and Information Systems laboratory</span><br>
+    <a href="https://www.diem.unisa.it/" rel="noopener" data-i18n="foot.dept">Department of Information and Electrical Engineering and Applied Mathematics (DIEM)</a><br>
+    Università degli Studi di Salerno · Via Giovanni Paolo II, 132 · 84084 Fisciano (SA)
+  </address>
+  <p class="equip" data-i18n="foot.equip">Equipment: 8 HP workstations, an HP server and an HP Z8 Fury G5 workstation.</p>
+</footer>
+
+<script src="js/logo-data.js"></script>
+<script src="js/mosaic.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

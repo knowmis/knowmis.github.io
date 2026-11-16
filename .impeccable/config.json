@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-15T19:43:04.703Z",
+        "reason": "assistant: sections pad with clamp(48px..150px) in css/style.css; detector cannot resolve clamp(), verified in screenshots"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-15T19:51:45.804Z",
+        "reason": "assistant: light ground is the tesserae ivory tile material of the chosen world, light default was requested by the user; user did not confirm the specific tone"
+      }
+    ]
+  }
+}

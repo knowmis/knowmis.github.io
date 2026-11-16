@@ -1,0 +1,105 @@
+{
+  "title": "Choose the KnowMIS visual world",
+  "question": "The roll assigned the Tesserae direction. Keep it, take an alternate, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "kind": "assigned",
+      "label": "Tesserae",
+      "kicker": "THE ROLL",
+      "lineage": "Roman and Byzantine floor and wall mosaics (Salerno, Paestum)",
+      "thesis": "Granular computing made literal: coarse tiles of data resolve into understanding as the page sharpens.",
+      "palette": ["#14110f", "#1b3a8c", "#c8553d", "#e3a72f", "#2f7d5b", "#efe6d2"],
+      "materials": ["glass tesserae", "dark grout", "gold leaf tile"],
+      "viewport": "A full-width mosaic of coarse tiles refining into the KnowMIS wordmark and the line From data to understanding; a granularity control sets the resolution.",
+      "risk": "Reads as pixel-art decoration if the resolve is not tied to the three SA acts below.",
+      "raised": [
+        {
+          "from": "challenger-bass",
+          "raise": "Each Situation Awareness act (perceive, comprehend, project) owns one full-bleed field and one idea, with staccato tile swaps between acts."
+        }
+      ],
+      "wireframe": {"cols": 12, "rows": 10, "regions": [
+        {"label": "wordmark + nav", "x": 0, "y": 0, "w": 12, "h": 1},
+        {"label": "mosaic resolving to headline", "x": 0, "y": 1, "w": 12, "h": 6, "accent": true},
+        {"label": "granularity control", "x": 0, "y": 7, "w": 4, "h": 1},
+        {"label": "CTA: join / collaborate", "x": 8, "y": 7, "w": 4, "h": 1},
+        {"label": "next act peeks", "x": 0, "y": 8, "w": 12, "h": 2}
+      ]}
+    },
+    {
+      "id": "model-pick",
+      "kind": "pick",
+      "label": "Olivetti Programma",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Olivetti 1950s-60s identity and Pintori posters",
+      "thesis": "Italy's own information-systems heritage: flat colour, rigorous grid, a confident machine voice.",
+      "palette": ["#f2efe6", "#1c1c1c", "#d7262d", "#0a6f6a"],
+      "materials": ["offset print", "enamel typewriter"],
+      "viewport": "A modular poster grid with the logo set as a stamp and the director named in the colophon.",
+      "risk": "Familiar academic-design shorthand; nostalgia if the grid is loose."
+    },
+    {
+      "id": "challenger-bass",
+      "kind": "challenger",
+      "catalogId": "posters-covers-sleeves-saul-bass-title",
+      "label": "Saul Bass Title Sequence",
+      "verdict": "competitive",
+      "lineage": "Saul Bass cut-paper title sequences",
+      "thesis": "One idea per full-bleed card, built from black silhouettes on flat colour.",
+      "palette": ["#d9531e", "#111111", "#f1ead8"],
+      "materials": ["cut paper", "flat field"],
+      "viewport": "Timed full-bleed cards: data, awareness, decision.",
+      "case": "Fuses well with SA's stages and is bold; loses on identifying researchers and partners.",
+      "risk": "Reads as film promo, not a lab."
+    },
+    {
+      "id": "challenger-nixie",
+      "kind": "challenger",
+      "catalogId": "signals-instruments-nixie-laboratory-counter",
+      "label": "Nixie Laboratory Counter",
+      "verdict": "declined",
+      "lineage": "nixie-tube counters",
+      "palette": ["#0d0d0d", "#ff8a1f"],
+      "materials": ["glass", "blackened steel"],
+      "case": "The lab has no verified numbers to count.",
+      "kept": "Total commitment to one warm accent."
+    },
+    {
+      "id": "challenger-gameboy",
+      "kind": "challenger",
+      "catalogId": "digital-design-canon-gameboy-four-shade-field",
+      "label": "Game Boy Four-Shade Field",
+      "verdict": "declined",
+      "lineage": "1989 handheld LCD",
+      "palette": ["#9bbc0f", "#8bac0f", "#306230", "#0f380f"],
+      "materials": ["dither", "LCD"],
+      "case": "Playful but undersells a research lab to partners.",
+      "kept": "Strict tile-grid discipline."
+    },
+    {
+      "id": "challenger-fold",
+      "kind": "challenger",
+      "catalogId": "paper-folds-pleats-deployable-curved-crease-shell",
+      "label": "Curved-Crease Shell",
+      "verdict": "declined",
+      "lineage": "curved-crease paper shells",
+      "palette": ["#efe9dc", "#2b2b2b"],
+      "materials": ["cotton paper", "graphite"],
+      "case": "Beautiful but abstract; does not say what the lab does.",
+      "kept": "One governing arc."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "A clean university-lab page, executed impeccably.",
+    "palette": ["#ffffff", "#0b1f3a", "#1d5fd1"],
+    "materials": ["clean grid", "line icons"],
+    "viewport": "Navy hero with the logo, research areas as a card row, team grid.",
+    "risk": "Indistinguishable from every other lab page."
+  },
+  "steer": true
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-15T00:00:00Z",
+  "title": "Design System: KnowMIS",
+  "extensions": {
+    "colorMeta": {
+      "ochre": { "role": "primary", "displayName": "Ochre Tile", "canonical": "#e3a72f", "tonalRamp": ["#2b1f06", "#53390c", "#7d5712", "#a97a1c", "#e3a72f", "#efc468", "#f6dc9c", "#fbefd2"] },
+      "lapis": { "role": "primary", "displayName": "Lapis Field", "canonical": "#1b3a8c", "tonalRamp": ["#070f26", "#0d1c4a", "#132a6a", "#1b3a8c", "#3a5cb3", "#6d86cc", "#a3b3df", "#d6ddf1"] },
+      "terra": { "role": "secondary", "displayName": "Terracotta Field", "canonical": "#a9402c", "tonalRamp": ["#2a0f0a", "#4f1c13", "#76291c", "#a9402c", "#c8553d", "#d98a76", "#e8b9ac", "#f5e0da"] },
+      "malachite": { "role": "secondary", "displayName": "Malachite Field", "canonical": "#1f6246", "tonalRamp": ["#08170f", "#102e21", "#174a34", "#1f6246", "#2f7d5b", "#6aa88b", "#a6cdb9", "#d7e9df"] },
+      "grout": { "role": "neutral", "displayName": "Grout Black", "canonical": "#14110f", "tonalRamp": ["#14110f", "#221d19", "#3a322b", "#4a4036", "#7a6e60", "#a99e8c", "#c9bfa9", "#e2d6bb"] },
+      "ivory": { "role": "neutral", "displayName": "Ivory", "canonical": "#efe6d2", "tonalRamp": ["#4a4036", "#7a6e60", "#a99e8c", "#c4b79a", "#e2d6bb", "#efe6d2", "#f6efdf", "#fbf8ef"] },
+      "paper": { "role": "neutral", "displayName": "Warm Paper", "canonical": "#f6efdf", "tonalRamp": ["#4a4036", "#8a7d68", "#c4b79a", "#e2d6bb", "#e9dcbd", "#efe4cb", "#f6efdf", "#fbf8ef"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Act headlines and the director name; Bricolage Grotesque 800, tight tracking." },
+      "headline": { "displayName": "Headline", "purpose": "Section h2s and the hero h1." },
+      "title": { "displayName": "Title", "purpose": "Group, partner, join sub-heads and team names." },
+      "body": { "displayName": "Body", "purpose": "Running text in Hanken Grotesk, 65ch cap." },
+      "label": { "displayName": "Label", "purpose": "Toggles and partner tags, bold with 0.04 to 0.08em tracking." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "ease", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Button lift (translateY -2px, 0.25s), nav underline, director link thickness (0.3s)." },
+      { "name": "tile-resolve", "value": "per-tile delay 0 to 260ms by column plus up to 300ms random, 16ms tick", "purpose": "Canvas tesserae stepping between granularities; skipped under prefers-reduced-motion." }
+    ],
+    "breakpoints": [
+      { "name": "tablet-down", "value": "880px" },
+      { "name": "phone", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ochre action button with Ink text; lifts 2px on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Work with the lab</a>",
+      "css": ".ds-btn-primary { display:inline-block; font:700 1rem/1 'Hanken Grotesk',system-ui,sans-serif; text-decoration:none; background:#e3a72f; color:#171310; padding:16px 22px; border-radius:2px; transition:transform .25s cubic-bezier(.16,1,.3,1), background-color .2s; } .ds-btn-primary:hover { background:#f0b83f; transform:translateY(-2px); } .ds-btn-primary:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Ink fill button for use on ochre fields.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Contact Prof. Gaeta</a>",
+      "css": ".ds-btn-ink { display:inline-block; font:700 1rem/1 'Hanken Grotesk',system-ui,sans-serif; text-decoration:none; background:#171310; color:#efe6d2; padding:16px 22px; border-radius:2px; transition:transform .25s cubic-bezier(.16,1,.3,1), background-color .2s; } .ds-btn-ink:hover { background:#221d19; transform:translateY(-2px); } .ds-btn-ink:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Quiet Link Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Text-only secondary action with a 2px accent underline.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">See the research</a>",
+      "css": ".ds-btn-quiet { display:inline-block; font:700 1rem/1 'Hanken Grotesk',system-ui,sans-serif; text-decoration:none; color:#171310; padding:0 0 8px; border-bottom:2px solid #b9791a; transition:transform .25s cubic-bezier(.16,1,.3,1); } .ds-btn-quiet:hover { transform:translateY(-2px); } .ds-btn-quiet:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Toggle Group",
+      "kind": "chip",
+      "refersTo": "control-toggle",
+      "description": "Language switch; pressed state is an ochre tile.",
+      "html": "<div class=\"ds-lang\"><button aria-pressed=\"true\">EN</button><button aria-pressed=\"false\">IT</button></div>",
+      "css": ".ds-lang { display:flex; gap:2px; } .ds-lang button { font:700 .8rem/1 'Hanken Grotesk',system-ui,sans-serif; letter-spacing:.08em; color:#171310; background:transparent; border:1.5px solid rgba(23,19,16,.28); padding:9px 11px; border-radius:2px; cursor:pointer; } .ds-lang button[aria-pressed=true] { background:#e3a72f; border-color:#e3a72f; } .ds-lang button:hover:not([aria-pressed=true]) { border-color:#b9791a; } .ds-lang button:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Plain text links with an accent underline on hover.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Research</a><a href=\"#\">Groups</a><a href=\"#\">People</a><a href=\"#\">Join</a></nav>",
+      "css": ".ds-nav { display:flex; gap:28px; font:500 .95rem 'Hanken Grotesk',system-ui,sans-serif; color:#171310; } .ds-nav a { color:inherit; text-decoration:none; padding:6px 0; border-bottom:2px solid transparent; transition:border-color .25s cubic-bezier(.16,1,.3,1); } .ds-nav a:hover { border-bottom-color:#b9791a; } .ds-nav a:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Granularity Stop",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Signature control: a swatch of jointed tiles beside a label; pressed inverts.",
+      "html": "<button class=\"ds-stop\"><i></i><span>Awareness</span></button>",
+      "css": ".ds-stop { display:inline-flex; align-items:center; gap:10px; font:500 .9rem/1 'Hanken Grotesk',system-ui,sans-serif; color:#4a4036; background:transparent; border:1.5px solid rgba(23,19,16,.3); padding:9px 14px 9px 10px; border-radius:2px; cursor:pointer; transition:border-color .2s,color .2s; } .ds-stop i { display:block; flex:none; width:22px; height:22px; background-color:#c4b79a; background-image:linear-gradient(90deg,#f6efdf 1.5px,transparent 1.5px),linear-gradient(#f6efdf 1.5px,transparent 1.5px); background-size:33.33% 33.33%; } .ds-stop:hover { border-color:#b9791a; color:#171310; } .ds-stop:focus-visible { outline:3px solid #171310; outline-offset:3px; }"
+    },
+    {
+      "name": "Domain Tiles",
+      "kind": "chip",
+      "refersTo": "domain-tile",
+      "description": "Application-domain chips, each in a different tile pigment.",
+      "html": "<ul class=\"ds-domains\"><li>Smart City</li><li>Logistics</li><li>E-Learning</li><li>Safety</li><li>Enterprise</li></ul>",
+      "css": ".ds-domains { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:6px; font-family:'Hanken Grotesk',system-ui,sans-serif; } .ds-domains li { padding:10px 14px; font-weight:700; font-size:.95rem; color:#171310; background:#e3a72f; border-radius:2px; } .ds-domains li:nth-child(2) { background:#efe6d2; } .ds-domains li:nth-child(3) { background:#e8b58f; } .ds-domains li:nth-child(4) { background:#7fa6d6; } .ds-domains li:nth-child(5) { background:#8fc3a5; }"
+    },
+    {
+      "name": "SA Group Panel",
+      "kind": "card",
+      "refersTo": "act-field-lapis",
+      "description": "Lapis panel that carries the SA line's emphasis.",
+      "html": "<article class=\"ds-group\"><h3>KnowMIS-SA</h3><p>Situation Awareness: perceive, comprehend, project.</p></article>",
+      "css": ".ds-group { background:#1b3a8c; color:#efe6d2; padding:40px; font-family:'Hanken Grotesk',system-ui,sans-serif; } .ds-group h3 { font:800 2.6rem/1 'Bricolage Grotesque','Arial Narrow',system-ui,sans-serif; letter-spacing:-.02em; margin:0 0 14px; } .ds-group p { margin:0; font-size:1.1rem; line-height:1.6; max-width:65ch; }"
+    },
+    {
+      "name": "Seam Band",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "30px transition band reusing the hero logo's tile border.",
+      "html": "<div class=\"ds-seam\" aria-hidden=\"true\"></div>",
+      "css": ".ds-seam { height:30px; background-color:#14110f; background-image:repeating-linear-gradient(90deg,transparent 0 8.5px,#14110f 8.5px 10px),repeating-linear-gradient(0deg,transparent 0 8.5px,#14110f 8.5px 10px),linear-gradient(90deg,#a9402c 50%,#e2d6bb 50%),linear-gradient(#171310,#171310),linear-gradient(90deg,#1b3a8c 50%,#e3a72f 50%); background-size:100% 100%,100% 100%,20px 10px,100% 10px,20px 10px; background-position:0 0,0 0,0 20px,0 10px,0 0; background-repeat:no-repeat,no-repeat,repeat-x,no-repeat,repeat-x; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Tessera Floor",
+    "overview": "The page is a mosaic floor laid out in acts. Every surface is either a flat, saturated field of one pigment (lapis, terracotta, malachite, ochre, ivory) or the dark grout that holds them together. Nothing is blended: no gradients on surfaces, no soft shadows, no glass. Depth comes from adjacency and from resolution, because the hero and the three act canvases are real tesserae drawn on canvas that sharpen from coarse tiles into a legible image.\n\nThe mood is confident, warm and mineral. Display type is a heavy, tightly set grotesk with character; body is a plain readable grotesk. The brush wordmark logo is the only script on the page. Rules are grout lines, 1 to 3px, and nothing else divides content.\n\nA light theme is the default (warm paper ground, ink text). A dark switch re-maps the same tokens to grout ground and ivory text; the pigment fields do not change between themes.",
+    "keyCharacteristics": [
+      "Flat full-bleed colour fields per act; one pigment, one idea.",
+      "Grout is the only line: 1px hairlines, 3px section rules.",
+      "Canvas-rendered tesserae with visible grout joints at four granularities.",
+      "Near-square corners (2px), like cut stone.",
+      "Ochre is the single action colour.",
+      "Heavy variable grotesk display against a quiet text face."
+    ],
+    "rules": [
+      { "name": "The One Pigment Per Field Rule", "body": "A full-bleed section is one flat pigment. No gradients, no two-tone splits, no tints on a field. A second colour appears only as text or as tiles inside the canvas.", "section": "colors" },
+      { "name": "The Ochre Is Action Rule", "body": "Ochre marks what the visitor can do or has chosen. It is not decoration on content.", "section": "colors" },
+      { "name": "The Theme Moves Ground, Not Pigment Rule", "body": "The dark switch re-maps ground, text, line and accent tokens only. Lapis, terracotta, malachite and ochre fields are identical in both themes.", "section": "colors" },
+      { "name": "The Heavy Display, Quiet Text Rule", "body": "Headings are always Bricolage 800 with negative tracking; everything read in sentences is Hanken at 400.", "section": "typography" },
+      { "name": "The Script Is The Logo Rule", "body": "No script, italic display or handwritten face is set in type. The hand-lettered wordmark is the only script on the page.", "section": "typography" },
+      { "name": "The Grout Is The Only Rule", "body": "Dividers are 1px hairlines or 3px solid section rules in grout/ink/accent-line. No shadows, no blurs, no dividers in another colour.", "section": "elevation" },
+      { "name": "The Seam Rule", "body": "A 30px seam band repeats the hero logo's tile border between fields. Reuse it only as a transition between fields.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do give each full-bleed field one flat pigment from the token set and one idea.",
+      "Do use Ochre for action and selection, with Ink text on it.",
+      "Do keep corners at 2px on tiles and 0 on fields.",
+      "Do use grout hairlines (1px) or 3px solid rules as the only dividers.",
+      "Do swap theme by changing data-theme on the root; fields stay put, ground/text/line/accent tokens move.",
+      "Do keep the canvas tiles visibly jointed and snapped to the mosaic palette.",
+      "Do keep body copy at 65ch or less."
+    ],
+    "donts": [
+      "Don't add box-shadows, blurs, glass, or gradient fills to surfaces.",
+      "Don't introduce a second action colour; one pigment (ochre) means \"do this\".",
+      "Don't set display type lighter than 700 or body type heavier than 700.",
+      "Don't use rounded corners above 2px or pill shapes on controls.",
+      "Don't use network-node art, equal icon cards or a navy hero; the page's thesis rejects that lab-site default.",
+      "Don't use any script face other than the logo asset."
+    ]
+  }
+}
