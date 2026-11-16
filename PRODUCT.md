@@ -16,7 +16,7 @@ Three audiences, all confirmed: thesis students (Ingegneria Informatica, Ingegne
 
 ## Product Purpose
 
-Landing page for KnowMIS (Knowledge Management and Information Systems), a laboratory of the Dipartimento di Ingegneria dell'Informazione ed Elettrica e Matematica Applicata (DIEM), Università degli Studi di Salerno. The lab studies how people, organisations and intelligent systems turn situational awareness into effective decisions. Success: a visitor understands what the lab does, which group fits them, who leads it, and how to reach it.
+Landing page for KnowMIS (Knowledge Management and Information Systems), a laboratory of the Dipartimento di Ingegneria dell'Informazione ed Elettrica e Matematica Applicata (DIEM), Università degli Studi di Salerno. The lab studies how people, organisations and intelligent systems turn situation awareness into effective decisions. Success: a visitor understands what the lab does, which group fits them, who leads it, and how to reach it.
 
 ## Positioning
 

@@ -15,7 +15,7 @@
     'hero.c2': 'La situazione è leggibile: chi, dove, che cosa sta cambiando.',
     'hero.c3': 'Risoluzione sufficiente per agire. È il lavoro del laboratorio.',
     'hero.h1': 'Dai dati alla comprensione. Dalla consapevolezza alla decisione.',
-    'hero.lead': 'KnowMIS, laboratorio di Knowledge Management and Information Systems dell’Università degli Studi di Salerno, studia come persone, organizzazioni e sistemi intelligenti trasformano la consapevolezza della situazione in decisioni efficaci.',
+    'hero.lead': 'KnowMIS, laboratorio di Knowledge Management and Information Systems dell’Università degli Studi di Salerno, studia come persone, organizzazioni e sistemi intelligenti trasformano la situation awareness in decisioni efficaci.',
     'hero.cta1': 'Collabora con il laboratorio', 'hero.cta2': 'Scopri la ricerca',
     'sa.h2': 'La Situation Awareness è il punto da cui nascono le buone decisioni.',
     'sa.p': 'Un tema centrale di KnowMIS: rendere interpretabili gli ambienti complessi, perché persone e sistemi decidano meglio. Una scena, il Golfo di Salerno, a tre risoluzioni: percepire, comprendere, proiettare.',
