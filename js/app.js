@@ -38,7 +38,7 @@
     'people.conote': 'Coordinatore · direzione scientifica di KnowMIS-SA.', 'people.collab': 'Collaboratore',
     'partners.h2': 'Una rete che unisce laboratori, città e aziende.',
     'partners.intl': 'Internazionali', 'partners.nat': 'Nazionali', 'partners.ind': 'Industria',
-    'partners.spin': 'Dalla ricerca del laboratorio è nato lo spin-off', 'partners.spin2': ', che applica IA e Computational Situation Awareness al city branding e allo sviluppo territoriale.',
+    'spin.h2': 'Spin-off', 'spin.intro': 'Ricerca del laboratorio diventata impresa.', 'spin.urban': 'Applica IA e Computational Situation Awareness al city branding e allo sviluppo territoriale.',
     'join.h2': 'Tre modi per entrare.',
     'join.s': 'Studenti', 'join.sp': 'Tesi su Situation Awareness e Decision Support Systems per Ingegneria Informatica, Ingegneria dell’Informazione e Medicina Digitale (primo e secondo livello).',
     'join.p': 'Aziende', 'join.pp': 'Progetti di ricerca, sviluppo e trasferimento tecnologico, come nelle collaborazioni con Poste Italiane, Engineering e Ciaopeople.',
