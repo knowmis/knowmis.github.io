@@ -216,6 +216,21 @@ p { margin: 0; max-width: 65ch; text-wrap: pretty; }
 .foot address { font-style: normal; color: var(--muted); line-height: 1.8; }
 .foot a:hover { color: var(--accent-text); }
 .equip { grid-column: 2; color: var(--muted); font-size: 0.9rem; }
+.foot-inst { grid-column: 1 / -1; display: flex; align-items: center; gap: clamp(24px, 4vw, 48px); padding-top: 24px; border-top: 1px solid var(--line); }
+.foot-inst a { display: block; }
+.foot .foot-inst img { height: 50px; width: auto; }
+.foot .foot-inst a:last-child img { height: 72px; }
+
+/* affiliation strip: always grout, in both themes */
+.affil {
+  display: flex; align-items: center; justify-content: flex-end; gap: 14px;
+  background: var(--grout); color: var(--muted-on-dark);
+  padding: 6px var(--gutter); font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em;
+}
+.affil a { display: block; }
+.affil img { height: 24px; width: auto; }
+.affil a:last-child img { height: 28px; }
+.affil :focus-visible { outline-color: var(--ochre); }
 
 @media (max-width: 880px) {
   .top { grid-template-columns: 1fr auto; row-gap: 6px; padding-bottom: 8px; }
@@ -233,6 +248,7 @@ p { margin: 0; max-width: 65ch; text-wrap: pretty; }
   .partners-grid, .join-grid, .spinoff-list li { grid-template-columns: 1fr; }
   .foot { grid-template-columns: 1fr; }
   .equip { grid-column: 1; }
+  .foot-inst { grid-column: 1; }
   .hero h1 { max-width: 16ch; }
   .grain-caption { min-height: 0; }
 }

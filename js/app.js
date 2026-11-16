@@ -43,6 +43,7 @@
     'join.s': 'Studenti', 'join.sp': 'Tesi su Situation Awareness e Decision Support Systems per Ingegneria Informatica, Ingegneria dell’Informazione e Medicina Digitale (primo e secondo livello).',
     'join.p': 'Aziende', 'join.pp': 'Progetti di ricerca, sviluppo e trasferimento tecnologico, come nelle collaborazioni con Poste Italiane, Engineering e Ciaopeople.',
     'join.r': 'Ricercatori', 'join.rp': 'Ricerca congiunta con una rete stabile di gruppi nazionali e internazionali su Situation Awareness e supporto alle decisioni.', 'join.rc': 'Scheda del laboratorio sul sito DIEM',
+    'affil.lab': 'Un laboratorio del',
     'foot.lab': 'Laboratorio di Knowledge Management and Information Systems',
     'foot.dept': 'Dipartimento di Ingegneria dell’Informazione ed Elettrica e Matematica Applicata (DIEM)',
     'foot.equip': 'Strumentazione: 8 workstation HP, un server HP e una workstation HP Z8 Fury G5.',
