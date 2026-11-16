@@ -20,7 +20,7 @@ Landing page for KnowMIS (Knowledge Management and Information Systems), a labor
 
 ## Positioning
 
-Situation Awareness is the lab's scientific identity: "from data to understanding, from awareness to decision". Two stable research groups: KnowMIS-SA (Situation Awareness, scientific direction prof. Giuseppe D'Aniello) and KnowMIS-DSS (Decision Support Systems, scientific direction prof. Matteo Gaeta). The user wants particular emphasis on the SA line. Matteo Gaeta is the lab's responsible director (the university page labels him "Responsabile Scientifico").
+Situation Awareness is the lab's scientific identity: "from data to understanding, from awareness to decision". Two stable research groups: KnowMIS-SA (Situation Awareness, scientific direction prof. Giuseppe D'Aniello) and KnowMIS-DSS (Decision Support Systems, scientific direction prof. Matteo Gaeta). The user wants particular emphasis on the SA line. Matteo Gaeta is the lab's Responsabile Scientifico.
 
 ## Capabilities and Constraints
 
@@ -36,11 +36,11 @@ Situation Awareness is the lab's scientific identity: "from data to understandin
 
 Logos in `assets/logos/`: `knowmis_logo_upscaled_nobg.png` (black hand-lettered wordmark, smiling figure on the K, a brain as the "o"; transparent background) and `knowmis_bianco.png` (white outline version with a walnut-shaped brain, for dark grounds). Source: https://www.diem.unisa.it/dipartimento/strutture?id=4
 
-People to show (user instruction: remove Falcone and Murati): Matteo Gaeta (Responsabile Scientifico / director), Giuseppe D'Aniello (Coordinatore), Luca Aliberti, Mario Della Corte, Alessandro Polverino (Collaboratori).
+People to show (user instruction: remove Falcone and Murati): Matteo Gaeta (Responsabile Scientifico), Giuseppe D'Aniello (Coordinatore), Luca Aliberti, Mario Della Corte, Alessandro Polverino (Ph.D. Students).
 
 ## Evidence on Hand
 
-Real, from the DIEM page: member list, two research groups, international collaborators (Duisburg-Essen, Drexel, Alberta, Kaohsiung, Mindanao State, Madanapalle IT&S, IBM Almaden, Quebec, SUPSI), national (Roma Tre, Calabria, Politecnico di Bari, SIMAS), industrial (Evolution Group, Ciaopeople Media Group, Engineering S.p.A., Poste Italiane, The Aerospace Corp.). No testimonials, publications list, project titles, funding figures or photos exist; do not fabricate them.
+Real, from the DIEM page: member list, two research groups, international collaborators (Duisburg-Essen, Drexel, Alberta, Kaohsiung, Mindanao State, Madanapalle IT&S, IBM Almaden, Quebec, SUPSI), national (Roma Tre, Calabria, Politecnico di Bari, SIMAS), industrial (Ciaopeople Media Group, Engineering S.p.A., Poste Italiane, The Aerospace Corp.). No testimonials, publications list, project titles, funding figures or photos exist; do not fabricate them.
 
 ## Product Principles
 
